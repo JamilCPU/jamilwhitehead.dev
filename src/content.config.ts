@@ -39,7 +39,7 @@ const baseSchema = z.object({
   authors: z.array(z.string()).default([]),
   pubDate: z.coerce.date(),
   updatedDate: z.coerce.date().optional(),
-  license: reference("licenses"),
+  license: reference("licenses").optional(),
   series: z.string().optional(),
   tags: z.array(z.string()).default([]),
   image: imageSchema,

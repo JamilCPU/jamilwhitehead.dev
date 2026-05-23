@@ -1,16 +1,86 @@
 ---
-import { getCollection } from "astro:content";
-import ListLayout from "../../layouts/ListLayout.astro";
-import { attachMeta } from "../../utils/meta";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import Container from "../../components/layouts/Container.astro";
+import PageTitle from "../../components/ui/PageTitle.astro";
+import Link from "../../components/ui/link/Link.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const projects = (await getCollection("projects", ({ data }) => !data.draft))
-    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-    .map((p) => attachMeta(p));
+interface Repo {
+    name: string;
+    description: string | null;
+    html_url: string;
+    language: string | null;
+    updated_at: string;
+}
+
+const dataPath = join(process.cwd(), "src", "data", "repos.json");
+const repoData = JSON.parse(readFileSync(dataPath, "utf-8"));
+const repos: Repo[] = repoData.repos;
+
+const langColors: Record<string, string> = {
+    Python: "#3572A5",
+    TypeScript: "#3178c6",
+    JavaScript: "#f1e05a",
+    Kotlin: "#A97BFF",
+    "C#": "#178600",
+    Java: "#b07219",
+    "C++": "#f34b7d",
+    C: "#555555",
+    HTML: "#e34c26",
+    Vue: "#41b883",
+    PowerShell: "#012456",
+    Ruby: "#701516",
+    Astro: "#ff5a03",
+};
 ---
 
-<ListLayout
+<BaseLayout
     title="Projects"
-    description="A collection of my projects."
-    ogImage="https://res.cloudinary.com/dellp9a4z/image/upload/v1756758388/og-projects_mj7lcc.png"
-    entries={projects}
-/>
+    description="A collection of projects by Jamil Whitehead."
+>
+    <Container class="py-12">
+        <PageTitle title="Projects" />
+
+        <p class="mt-4 text-center text-gray-600 dark:text-gray-400">
+            See more on <Link href="https://github.com/JamilCPU" variant="default">GitHub</Link>
+        </p>
+
+        {repos.length === 0 ? (
+            <p class="mt-8 text-center text-gray-500 dark:text-gray-400">
+                Could not load projects. Check back later.
+            </p>
+        ) : (
+            <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {repos.map((repo) => (
+                    <a
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="group flex flex-col rounded-xl border border-gray-200 p-5 transition hover:border-blue-400 hover:shadow-lg dark:border-gray-700 dark:hover:border-yellow-400"
+                    >
+                        <h3 class="font-semibold transition-colors group-hover:text-blue-500 dark:group-hover:text-yellow-400">
+                            {repo.name}
+                        </h3>
+                        {repo.description && (
+                            <p class="mt-2 line-clamp-2 flex-1 text-sm text-gray-500 dark:text-gray-400">
+                                {repo.description}
+                            </p>
+                        )}
+                        <div class="mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+                            {repo.language ? (
+                                <span class="flex items-center gap-1.5">
+                                    <span class="inline-block size-2.5 rounded-full" style={`background-color: ${langColors[repo.language] || "#8b8b8b"}`} />
+                                    {repo.language}
+                                </span>
+                            ) : <span />}
+                            <span>
+                                Updated {new Date(repo.updated_at).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+                            </span>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        )}
+    </Container>
+</BaseLayout>

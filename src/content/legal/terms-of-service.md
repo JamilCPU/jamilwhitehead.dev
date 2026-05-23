@@ -1,17 +1,8 @@
 ---
 draft: false
 title: Terms of Service
-description: Read the terms and conditions for using Daniel Adrian's website and services.
-lastUpdated: 2025-08-01T03:20:00.000Z
-ogImage:
-  src: >-
-    https://res.cloudinary.com/dellp9a4z/image/upload/v1756758388/og-terms-of-service_l6gfoa.png
-  alt: >-
-    The graphic has a two-column layout on a light blue, gridded background. On
-    the left, it displays a profile picture of a man with the text "Daniel
-    Adrian's SPACE" below. The right side features the large heading "Terms of
-    Service" and a brief description inviting users to read the terms and
-    conditions for using the website and its services.
+description: Read the terms and conditions for using Jamil Whitehead's website and services.
+lastUpdated: 2026-05-11T00:00:00.000Z
 ---
 Welcome to this website. By accessing or using the site, you agree to comply with and be
 bound by the following terms and conditions.
@@ -33,9 +24,7 @@ intellectual property laws.
 
 ## Third-Party Services and Links
 
-This site is hosted by Cloudflare. Content delivery, security, and performance features are provided according to Cloudflare’s policies.
-
-The site may also contain links to third-party websites, including external shops where purchases are made. We are not responsible for the content, transactions, fulfillment, or policies of any third-party sites.
+This site may contain links to third-party websites. We are not responsible for the content, transactions, fulfillment, or policies of any third-party sites.
 
 ## Disclaimer of Warranties
 

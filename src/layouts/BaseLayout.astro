@@ -4,7 +4,6 @@ import "../styles/global.css";
 import { Font } from "astro:assets";
 import { SITE_SETTINGS } from "../site.config";
 
-import TurnstileController from "../components/integrations/turnstile/TurnstileController.astro";
 import SkipLinkBtn from "../components/ui/SkipLinkBtn.astro";
 import ScrollToTop from "../components/ui/ScrollToTop.astro";
 import Header from "../components/layouts/Header.astro";
@@ -82,14 +81,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
                 document.documentElement.classList.toggle("dark", isDark);
             } catch {}
         </script>
-
-        <TurnstileController />
-
-        <script
-            src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileAPILoad"
-            defer
-            referrerpolicy="origin"
-            crossorigin="anonymous"></script>
 
         <script src="../utils/overlay.ts"></script>
     </head>

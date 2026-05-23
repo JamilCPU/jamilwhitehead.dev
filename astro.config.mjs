@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig, fontProviders } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 import expressiveCode from "astro-expressive-code";
@@ -48,7 +47,6 @@ export default defineConfig({
 
   integrations: [
     sitemap(),
-    pagefind(),
     icon(),
     expressiveCode({
       plugins: [pluginLineNumbers()],
@@ -74,18 +72,18 @@ export default defineConfig({
       directives: [
         "default-src 'self'",
         "object-src 'self'",
-        "connect-src 'self' https://challenges.cloudflare.com",
+        "connect-src 'self'",
         "base-uri 'self'",
         "img-src 'self' data:",
         "media-src 'self'",
         "font-src 'self' data:",
-        "frame-src 'self' https://challenges.cloudflare.com",
-        "worker-src 'self' blob: https://challenges.cloudflare.com",
-        "child-src 'self' https://challenges.cloudflare.com blob:",
+        "frame-src 'self'",
+        "worker-src 'self' blob:",
+        "child-src 'self' blob:",
         "manifest-src 'none'",
       ],
       scriptDirective: {
-        resources: ["'self'", "https://challenges.cloudflare.com", "blob:"],
+        resources: ["'self'", "blob:"],
         hashes: [
           "sha256-+D181lN2Iw1b9lkNhIL2BSfLXvTnxTpdqxKE5OjSgk0=",
           "sha256-UnpvhDyF7OXferJXLLEvpK6eSVKujiCxuakCMAAfX0k=",

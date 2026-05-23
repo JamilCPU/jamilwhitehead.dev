@@ -10,6 +10,12 @@ export const SITE_SETTINGS = {
       url: "https://github.com/JamilCPU",
       handle: "JamilCPU",
     },
+    {
+      icon: "linkedin",
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/jamil-whitehead-software-engineering/",
+      handle: "jamil-whitehead",
+    },
   ],
 };
 
@@ -30,21 +36,13 @@ export const header = [
     name: "Contact",
     url: "/contact",
   },
-  {
-    name: "Newsletter",
-    url: "/newsletter",
-  },
 ];
 
 export const footer = [
   {
     title: "Content",
     links: [
-      {
-        name: "Search",
-        url: "/search",
-      },
-      {
+{
         name: "Blog",
         url: "/blog",
       },
@@ -65,11 +63,7 @@ export const footer = [
         name: "Contact",
         url: "/contact",
       },
-      {
-        name: "Newsletter",
-        url: "/newsletter",
-      },
-      {
+{
         name: "RSS",
         url: "/rss.xml",
       },

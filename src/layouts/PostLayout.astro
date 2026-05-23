@@ -5,7 +5,6 @@ import PostMeta from "../components/content/PostMeta.astro";
 import PostNavigation from "../components/content/PostNavigation.astro";
 import Prose from "../components/content/Prose.astro";
 import ToC from "../components/content/ToC/ToC.astro";
-import BuyMeACoffee from "../components/integrations/BuyMeACoffee.astro";
 import MediumZoom from "../components/integrations/MediumZoom.astro";
 import { Icon } from "astro-icon/components";
 import type { ContentEntry, WithMeta } from "../types";
@@ -60,22 +59,6 @@ const nextPost = allPostsInCollection[postIndex - 1];
                 <Content />
             </Prose>
         </div>
-        <!-- Support me -->
-        <div
-            class="my-12 rounded-lg border border-neutral-200 bg-neutral-50 p-8 text-center dark:border-neutral-700 dark:bg-neutral-900"
-        >
-            <h3 class="text-xl font-semibold">
-                Did you find this post helpful?
-            </h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">
-                A little support goes a long way in helping me create more free,
-                in-depth content like this.
-            </p>
-            <div class="mt-6">
-                <BuyMeACoffee class="inline-flex text-lg" />
-            </div>
-        </div>
-
         <!-- Post Navigation -->
         <PostNavigation {prevPost} {nextPost} />
     </Article>

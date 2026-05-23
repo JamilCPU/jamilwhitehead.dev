@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "fetch-repos": "node scripts/fetch-repos.cjs",
+    "build": "node scripts/fetch-repos.cjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

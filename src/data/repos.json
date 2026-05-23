@@ -1,0 +1,229 @@
+{
+  "fetchedAt": "2026-05-23T22:07:47.800799Z",
+  "repos": [
+    {
+      "name": "AlarmAPI",
+      "description": "Android alarm app with embedded Ktor REST server \u00e2\u20ac\u201d triggers YoutubeBrainwash playback on wake-up",
+      "html_url": "https://github.com/JamilCPU/AlarmAPI",
+      "language": "Kotlin",
+      "updated_at": "2026-05-05T01:33:58Z"
+    },
+    {
+      "name": "YoutubeBrainwash",
+      "description": "AI-curated YouTube morning feed with Claude scoring, Snapcast multi-room audio, and phone remote",
+      "html_url": "https://github.com/JamilCPU/YoutubeBrainwash",
+      "language": "Python",
+      "updated_at": "2026-05-05T01:02:38Z"
+    },
+    {
+      "name": "claude-hub",
+      "description": "Centralized tool call hub for multi-agent Claude Code orchestration",
+      "html_url": "https://github.com/JamilCPU/claude-hub",
+      "language": "TypeScript",
+      "updated_at": "2026-04-24T23:03:17Z"
+    },
+    {
+      "name": "phone-mcp",
+      "description": "MCP server + Android agent to control your phone with AI models over Tailscale",
+      "html_url": "https://github.com/JamilCPU/phone-mcp",
+      "language": "Python",
+      "updated_at": "2026-04-01T19:02:30Z"
+    },
+    {
+      "name": "activity-logger",
+      "description": "Personal activity tracker \u00e2\u20ac\u201d logs app usage, idle time, and habits for AI analysis",
+      "html_url": "https://github.com/JamilCPU/activity-logger",
+      "language": "Python",
+      "updated_at": "2026-04-01T18:22:45Z"
+    },
+    {
+      "name": "YoutubeUploader",
+      "description": "Automation for uploading newly created videos straight to YouTube.",
+      "html_url": "https://github.com/JamilCPU/YoutubeUploader",
+      "language": "Python",
+      "updated_at": "2026-04-01T18:19:17Z"
+    },
+    {
+      "name": "Automatic1111-ImagePipeline",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/Automatic1111-ImagePipeline",
+      "language": null,
+      "updated_at": "2026-02-27T04:02:53Z"
+    },
+    {
+      "name": "LangGraph-Automation",
+      "description": "Attempting to automate a basic dev and test workflow utilizing agents",
+      "html_url": "https://github.com/JamilCPU/LangGraph-Automation",
+      "language": null,
+      "updated_at": "2026-02-07T14:46:16Z"
+    },
+    {
+      "name": "-Oura-Desktop",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/-Oura-Desktop",
+      "language": "C#",
+      "updated_at": "2026-01-23T02:32:15Z"
+    },
+    {
+      "name": "Automated-SSH-Keygen",
+      "description": "Automated SSH Keygen",
+      "html_url": "https://github.com/JamilCPU/Automated-SSH-Keygen",
+      "language": "Python",
+      "updated_at": "2025-12-12T03:26:14Z"
+    },
+    {
+      "name": "TransactionAnalysis",
+      "description": "Login, Upload Transactions, and have them analyzed!(In Progress)",
+      "html_url": "https://github.com/JamilCPU/TransactionAnalysis",
+      "language": "C#",
+      "updated_at": "2025-11-30T02:01:57Z"
+    },
+    {
+      "name": "UbuntuCrashLogs",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/UbuntuCrashLogs",
+      "language": null,
+      "updated_at": "2025-11-20T03:25:14Z"
+    },
+    {
+      "name": "PocketAlexa",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/PocketAlexa",
+      "language": "Python",
+      "updated_at": "2025-11-09T05:38:22Z"
+    },
+    {
+      "name": "AppLogger",
+      "description": "Application featuring multiple powershell scripts allowing for the collection and display of user's application usage",
+      "html_url": "https://github.com/JamilCPU/AppLogger",
+      "language": "PowerShell",
+      "updated_at": "2025-09-27T01:03:24Z"
+    },
+    {
+      "name": "DigitalEyeStrainHelper",
+      "description": "Application to automatically notify user's exceeding a specified screen time. Allows for customized user settings for ease of use. Made with the Tkinter lib",
+      "html_url": "https://github.com/JamilCPU/DigitalEyeStrainHelper",
+      "language": "Python",
+      "updated_at": "2025-09-27T01:02:15Z"
+    },
+    {
+      "name": "GrokkingAlgorithms",
+      "description": "Practice problems from the Grokking Algorithms second edition book",
+      "html_url": "https://github.com/JamilCPU/GrokkingAlgorithms",
+      "language": "Python",
+      "updated_at": "2025-09-21T19:04:42Z"
+    },
+    {
+      "name": "SteamApiFrontend",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/SteamApiFrontend",
+      "language": "Python",
+      "updated_at": "2025-07-22T15:42:48Z"
+    },
+    {
+      "name": "InventoryUpgrades",
+      "description": "Inventory Upgrades Mod for Lethal Company",
+      "html_url": "https://github.com/JamilCPU/InventoryUpgrades",
+      "language": null,
+      "updated_at": "2025-06-20T04:13:15Z"
+    },
+    {
+      "name": "Bullseye",
+      "description": "C#, Docker, Kubernetes, PostGresSQL, JS, HTML, CSS, APi-based",
+      "html_url": "https://github.com/JamilCPU/Bullseye",
+      "language": "C#",
+      "updated_at": "2025-05-20T02:52:48Z"
+    },
+    {
+      "name": "DigitalEyeStrainWeb",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/DigitalEyeStrainWeb",
+      "language": "HTML",
+      "updated_at": "2025-05-03T22:03:07Z"
+    },
+    {
+      "name": "SearchGPT",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/SearchGPT",
+      "language": null,
+      "updated_at": "2025-04-29T01:23:07Z"
+    },
+    {
+      "name": "DigitalEyeStrain",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/DigitalEyeStrain",
+      "language": "Vue",
+      "updated_at": "2025-03-17T23:21:34Z"
+    },
+    {
+      "name": "GitSetup",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/GitSetup",
+      "language": "C",
+      "updated_at": "2024-12-16T01:24:04Z"
+    },
+    {
+      "name": "Chess",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/Chess",
+      "language": null,
+      "updated_at": "2023-10-25T00:42:04Z"
+    },
+    {
+      "name": "StockData",
+      "description": "Utilizes Intrinio's API to capture and report company stock data to end user",
+      "html_url": "https://github.com/JamilCPU/StockData",
+      "language": "C",
+      "updated_at": "2023-10-15T21:31:13Z"
+    },
+    {
+      "name": "PhonePlanSimulation",
+      "description": "Program interacts with user in the terminal",
+      "html_url": "https://github.com/JamilCPU/PhonePlanSimulation",
+      "language": "Java",
+      "updated_at": "2022-04-05T20:29:00Z"
+    },
+    {
+      "name": "CSVProcessing",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/CSVProcessing",
+      "language": "Java",
+      "updated_at": "2022-03-25T21:58:48Z"
+    },
+    {
+      "name": "Explorer-",
+      "description": "A command line exploring game",
+      "html_url": "https://github.com/JamilCPU/Explorer-",
+      "language": "Java",
+      "updated_at": "2020-11-30T14:24:55Z"
+    },
+    {
+      "name": "RNG",
+      "description": null,
+      "html_url": "https://github.com/JamilCPU/RNG",
+      "language": "Java",
+      "updated_at": "2020-11-30T04:03:03Z"
+    },
+    {
+      "name": "SCalculator",
+      "description": "Simple Calculator Project",
+      "html_url": "https://github.com/JamilCPU/SCalculator",
+      "language": "Java",
+      "updated_at": "2020-11-23T19:20:01Z"
+    },
+    {
+      "name": "RPSgame",
+      "description": "Simple rock paper scissors game in C++",
+      "html_url": "https://github.com/JamilCPU/RPSgame",
+      "language": "C++",
+      "updated_at": "2020-05-20T17:35:46Z"
+    },
+    {
+      "name": "github-slideshow",
+      "description": "A robot powered training repository :robot:",
+      "html_url": "https://github.com/JamilCPU/github-slideshow",
+      "language": "Ruby",
+      "updated_at": "2020-05-04T02:14:23Z"
+    }
+  ]
+}
