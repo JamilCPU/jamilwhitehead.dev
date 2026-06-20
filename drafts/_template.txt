@@ -1,0 +1,20 @@
+TITLE: <your headline goes here>
+
+<Optional one-line summary of what the article is about — Claude will turn
+this into the SEO description. Skip it if you'd rather Claude draft one.>
+
+TAGS: tag-one, tag-two   (optional — Claude can suggest these too)
+
+---
+
+Write the body here. Just talk normally.
+
+Start a new line for a new paragraph. If you want a section break, write a
+short header line on its own (e.g. "The problem" or "What I tried") and Claude
+will turn it into a proper heading.
+
+For code, just paste it in and mention the language — Claude will wrap it in a
+formatted code block.
+
+Don't worry about Markdown, links formatting, or polish. Get the thoughts down;
+Claude handles the formatting.
